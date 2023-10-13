@@ -1,38 +1,191 @@
-.App {
+/* Header Styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Add this style to your Navbar CSS or a global CSS file */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Adjust the z-index as needed */
+}
+
+/* Add this style to your main content container to create space for the Navbar */
+.main-content {
+  margin-top: 60px; /* Adjust the margin to match your Navbar's height */
+}
+
+.header-content {
+    text-align: center;
+    padding-top: 55px;
+    margin-bottom: -59px;
+  }
+  
+  .app-header {
+    background-color: #000; /* Background color for the header */
+    color: rgb(255, 255, 255); /* Text color for the header */
+    padding: 10px 0; /* Add padding to the top and bottom */
+  }
+  
+  .app-header h1 {
+    margin: 0;
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+  
+  .current-date-time {
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+  
+/* CSS for the Content Wrapper */
+.content-wrapper {
+    min-height: 100vh; /* Ensure the wrapper spans the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* CSS for the Main Content */
+  main {
+    flex-grow: 1; /* Allow the main content to grow and push the footer down */
+    /* Add any other styling you need for the main content */
+  }
+
+  /* Add this CSS class to set the background color */
+.news-container {
+    background-color: #000;
+    /* Add other styles as needed */
+  }
+  
+  
+  /* CSS for the Footer Component (Same as before) */
+  .footer {
+    width: 100%;
+    background-color: #222; /* Set your desired background color */
+    color: white; /* Set your desired text color */
+    padding: 20px; /* Add padding as needed */
+  }
+/* Add this CSS to your existing styles */
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us{
+    padding :70px;
+}  
+/* Update the CSS for the .social-icons container */
+.social-icons {
+    text-align: center; /* Center-align the content */
+    margin-top: 10px; /* Add margin for spacing */
+}
+
+/* Add this CSS to center-align each social icon */
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px; /* Adjust the horizontal spacing as needed */
+}
+/* Update the CSS for the .legal-info container */
+.legal-info {
+    text-align: center; /* Center-align the content */
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+/* Custom styles for the sidebar carousel */
+.sidebar-carousel {
+  /* Add your styles here */
+  text-align: center; /* Center-align the carousel */
+  margin-top: 20px; /* Add space from the top */
+}
+
+/* Style for the "Read More" button */
+/* .read-more-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} */
+
+.read-more-button:hover {
+  background-color: #0056b3;
+}
+
+/* SidebarCarousel.css */
+
+/* Container for the entire sidebar and carousel */
+.sidebar-carousel-container {
+  display: flex; /* Use flexbox to arrange items */
+  align-items: flex-start; /* Align items to the top (start) of the container */
+  /* justify-content: space-between;  */
+  border: 1px solid white;
+}
+
+/* Styles for the sidebar */
+.sidebar {
+  width: 60%; /* Adjust the width as needed */
+  /* background-color: #f0f0f0; Set the background color */
+  padding: 20px; 
+  margin-left:60px;
+}
+
+/* Styles for the carousel images (you can adjust these as needed) */
+.carousel-image-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (adjust as needed) */
+}
+
+/* Styles for the carousel legend (category buttons) */
+.legend {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styles for the category buttons (you can customize these styles) */
+.read-more-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 5px;
+}
+/* Add this to your CSS file */
+.category-list {
+  position: relative; /* Change this to relative */
+  margin-left: 106px;
+  color: #fff; 
+  padding: 5px;
+}
+.heading{
+  font-size:3.5rem;
+  color:#fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.category-list ul {
+  list-style: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.category-list li {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.category-list a {
+  text-decoration: underline;
+  color: #f4f2f2; /* Link color */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.category-list a:hover {
+  color: #007bff; /* Link color on hover */
 }

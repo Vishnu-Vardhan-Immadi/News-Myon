@@ -1,5 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import React, { Component } from 'react'
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import Sidebar from './components/SideBar';
+import News from './components/News'
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+
